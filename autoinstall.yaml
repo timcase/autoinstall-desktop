@@ -7,6 +7,9 @@ autoinstall:
   # Any desired additional packages may also be listed here.
   packages:
     - ubuntu-desktop
+    - openssh-server
+    - mosh
+    - curl
 
   # This adds the default snaps found on a 22.04 Ubuntu Desktop system.
   # Any desired additional snaps may also be listed here.
@@ -24,11 +27,11 @@ autoinstall:
   # 3. Prompt for user configuration on first boot.  Remove this identity
   #    section and see the "Installation without a default user" section.
   identity:
-    realname: ''
-    username: ubuntu
+    realname: 'Tim Case'
+    username: tcase
     # A password hash is needed. `mkpasswd --method=SHA-512` can help.
     # mkpasswd can be found in the package 'whois'
-    password: '<password hash>'
+    password: '$6$RYsuaAByVOaizqLb$v6iac56BQtyjFHLMZC/uOLV/lEnH9dTPYSOgpZExhlqwQLniZfKGjFQZG54PyVKc2.WStcwVV.a.HpYoJQJIs1'
     hostname: ubuntu-desktop
 
   # Subiquity will, by default, configure a partition layout using LVM.
